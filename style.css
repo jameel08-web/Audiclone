@@ -91,7 +91,7 @@ ul li:hover{
    
 }
 .cardsection{
-     padding: 80px 60px;
+     padding: 80px 20px;
      display: flex;
      flex-direction: column;
      gap: 80px;
@@ -106,7 +106,7 @@ ul li:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 5px 30px;
+    /* padding: 5px 30px; */
 }
 .card{
     display: flex;
@@ -161,7 +161,7 @@ ul li:hover{
     align-items: flex-end;
 }
 .infosectionimg > img{
-    width: 680px;
+    width: 100%;
 
 }
 .infosectiontext{
@@ -222,7 +222,7 @@ ul li:hover{
     color: white;
     text-decoration: none;
     font-size: 14px;
-    margin-left: 20PX;
+   
 }
 .linkitem:hover a,
 .linkitem:hover .fa-chevron-up {
@@ -232,6 +232,7 @@ ul li:hover{
     display: flex;
     color: white;
     gap: 120px;
+    flex-wrap: wrap;
     
     
 }
@@ -295,6 +296,9 @@ ul li:hover{
     position: absolute;
     left:   80px;
 }
+/* .herotxt h2{
+    font-size: 35px;
+} */
 .maincard{
     grid-template-columns: auto auto ;
     row-gap: 40px;
@@ -302,27 +306,66 @@ ul li:hover{
 .infosection{
     flex-direction: column;
 }
+.footer {
+    padding: 20px 30px; 
+  }
 
     .footerlist{
-        flex-direction: column;
-        align-items: center;
-    }
-   .copyrightSection{
-        flex-direction: column;
-         margin-bottom: 50px;
-   }
-.leftSection ul {
     display: block;
-   margin-bottom: 50px
-
-}
-}
-@media (max-width: 525px) {
-  .maincard {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
+    margin: 0 auto;
+    }
+    .copyrightSection {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
   }
+  .leftSection{
+   margin: 0 auto;
+  
+  }
+  .leftSection ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+.leftSection li {
+   margin-bottom: 8px;
+  }
+   .rightSection {
+    justify-content: center !important;
+  }
+
+  .footersociallink {
+    justify-content: center;
+  }
+
+  .footerlink {
+    justify-content: flex-end;
+  }
+
+.infobtn{
+    width: 100%;
 }
+
+
+.cardimage img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.infosectionbtn{
+    display: flex;
+    justify-content: center;
+}
+.cardheading > p{
+    font-size: 25px;
+}
+.cardlink a{
+    font-size: 15px;
+}
+}
+
+
 @media (max-width: 668px) {
     .footerlist{
         flex-direction: column;
